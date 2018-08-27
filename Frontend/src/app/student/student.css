@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EEF1F5;
+}
+
+#inf-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #2B3643;
+}
+
+#inf-header::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.inf-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 2fr;
+    float: right;
+}
+
+.inf-icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.inf-icon::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../../img/mail.png);
+    background-size: cover;
+    margin: 15px auto;
+}
+
+.inf-icon[data-inf-icon="calendar"]::before {
+    background-image: url(../../img/calendar.png);
+}
+
+
+.inf:hover {
+    background-color: #3F4F62;;
+}
+
+#user-drop-down-menu {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.user-name {
+    color: #A5AFBC;
+    font-size: .85em;
+    margin-top: 15px;
+}
+
+#user-drop-down-menu img {
+    display: block;
+    border-radius: 50%;
+    width: 32px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#profile {
+    margin-top: 50px;
+    background-color: #EEF1F5;
+    display: grid;
+    grid-template-columns: 300px repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+#profile div {
+    background-color: white;
+    box-shadow: 0 0 24px rgba(0, 0, 0, .15);
+}
+
+.user-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    margin: 20px auto;
+}
+
+.name-user {
+    color: #5A7391;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.status-user {
+    color: #5B9BD1;
+    text-align: center;
+    font-size: .9em;
+}
+
+.home-icon {
+    background-image: url(../../img/home.png);
+}
+
+.setting-icon {
+    background-image: url(../../img/settings.png);
+}
+
+.info-icon {
+    background-image: url(../../img/info.png);
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    box-shadow: none !important;
+    float: left;
+    background-color: #F6F9FB !important;
+}
+
+.menu-item p {
+    padding-left: 35px;
+    color: #609ED2;
+}
+
+.menu-item {
+    padding: 15px;
+    box-shadow: none !important;
+}
+
+.menu-item:hover {
+    cursor: pointer;
+    background-color: #F6F9FB !important;
+}
+
+.menu-item-current {
+    border-left: 2px solid #5B9BD1;
+    background-color: #F6F9FB !important;
+}
+
+.massage-btn-block {
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: none !important;
+
+} 
+
+.massage-btn-block button {
+    width: 100px;
+    height: 35px;
+    border-radius: 50px;
+    background-color: #e7505a;
+    border-color: #e7505a;
+    border-style: solid;
+    font-size: .78em;
+    color: #fff;
+}
+
+.massage-btn-block button:hover {
+    background-color: #E12330;
+    border-color: #E12330;
+}

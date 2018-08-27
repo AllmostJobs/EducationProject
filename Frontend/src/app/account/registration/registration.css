@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans",sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #364150;
+}
+
+.content {
+    background-color: white;
+    width: 400px;
+    margin: 100px auto 0;
+    padding: 20px;
+}
+
+.hint {
+    color: #999;
+}
+
+.form-title {
+    text-align: center;
+    padding: 20px;
+    text-transform: capitalize;
+    color: #32C5D2;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    background-color: #DDE3EC;
+    color: #757575;
+    font-size: .85em;
+    margin: 5px 0;
+    border: none;
+}
+
+#country-select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin: 5px 0;
+    font-size: .85em;
+    color: #757575;
+    background-color: #DDE3EC;
+}
+
+.error {
+    display: block !important;
+    font-size: .85em;
+    color: tomato;
+    padding: 5px;
+}
+
+.error-default {
+    display: none;
+}
+
+#agree-label {
+    font-size: .85em;
+    padding-top: 10px;
+}
+
+#agree-label a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+#agree-label a:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+.form-actions {
+    margin-top: 50px;
+}
+
+.form-actions::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.form-actions button {
+    border: none;
+    background: none;
+    padding: 10px 20px;
+    font-size: .85em;
+    font-weight: bold;
+    transition: all .15s ease-in; 
+}
+
+.form-actions button[type="button"] {
+    float: left;
+    color: #32C5D2;
+    border: 1px solid currentColor;
+}
+
+.form-actions button[type="button"]:hover {
+    background-color: #32C5D2;
+    color: white;
+}
+
+.form-actions button[type="submit"] {
+    float: right;
+    border: 1px solid #32C5D2;
+    text-transform: uppercase;
+    color: white;
+    background-color: #32C5D2;
+}
+
+.form-actions button[type="submit"]:hover {
+    background-color: white;
+    color: #32C5D2;
+}
+
+.copyright-block {
+    padding: 20px;
+    background-color: #364150;
+}
+
+.copyright-block p {
+    text-align: center;
+    color: #6B798C;
+    font-size: .85em;
+}
+

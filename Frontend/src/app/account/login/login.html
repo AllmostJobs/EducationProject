@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" ng-app = "login">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../../../../node_modules/bootstrap/dist/css/bootstrap-grid.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="main-con">
+        <header>
+            <span>EVAN</span>CORP
+        </header>
+        <main class="account-cont">
+            <h3>Sign In</h3>
+            <form name="LoginForm" ng-controller = "loginController">
+                <span class="error-deffault" ng-class="error" ng-show="LoginForm.loginField.$error.required">Required!</span>
+                <input ng-model="username" class = "input-field" name="loginField" required type="text" placeholder="Username">
+               
+                <span class="error-deffault" ng-class="error" ng-show="LoginForm.passwordField.$error.required">Required!</span>
+                <input ng-model="passwod" class = "input-field" name="passwordField" required type="text" placeholder="Password">
+                
+                <div class="row confirm-cont">
+                    <div class="col-md-4 col-xs-12 log-btn-wrap">
+                        <button ng-click="error='error'" name="submit" value="submit">LOGIN</button>
+                    </div>
+                    <div class="col-md-4 col-xs-12 remember-elem">
+                        <label for="remember"><input type="checkbox" id="remember" class="remember-box"> Remember</label>
+                    </div>
+                    <div class="col-md-4 col-xs-12 remember-elem">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div class="row login-soc">
+                <div class="col-xs-6">
+                    <p>Or login with</p>
+                </div>
+                <div class="col-xs-6 icon-wrap"></div>
+            </div>
+            <div class="create-acc">
+                <p>CREATE AN ACCOUNT</p>
+            </div>
+            <div class="copyright-block">
+                <p>2018 &copy Evancorp. Project For Test.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="../../../../dist/bundle.js"></script>
+</body>
+</html>
